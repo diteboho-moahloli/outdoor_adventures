@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black');
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 70px 400px 400px 400px 100px 100px 100px 100px;
+  grid-gap: 10px
+}
+
+
+header{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+// styling the navbar
+nav{
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 10px;
+
+  /* styling the position of the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+}
+
+
+
+
+.fishing{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url("../images/pexels-photo-1058295.jpeg");
+  background-size: cover;
+}
+
+.hiking{
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background: url("../images/pexels-photo-792668.jpeg");
+  background-size: cover;
+  }
+
+  .camping{
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../images/pexels-photo-111362.jpeg");
+  background-size: cover;
+}
+
+.rock_climbing{
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  background-image: url("../images/pexels-photo-449609.jpeg");
+  background-size: cover;
+}
+
+.fishing_article{
+  background-color: orange;
+  // background-image: url("../images/pexels-photo-1058295.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 6;
+
+  p{
+    text-align: center;
+
+    h3{
+      text-decoration-line: underline;
+
+    }
+  }
+
+
+}
+
+.hiking_article{
+  background-color: orange;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 6;
+  grid-row-end: 7;
+}
+
+.camping_article{
+  background-color: orange;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.rock_climbing_article{
+  background-color: orange;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
+
+.footer{
+  background-color: red;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 9;
+}
