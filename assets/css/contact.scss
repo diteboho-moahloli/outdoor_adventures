@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Alfa+Slab+One|Archivo+Black");
+
+#container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 400px 70px 450px 550px 100px;
+  grid-gap: 10px;
+
+}
+
+//this is my header
+header{
+  grid-column: 1/5;
+  grid-row: 1/2;
+  background-image: url("header.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+//this is my nav bar
+nav{
+  background-color: black;
+  grid-column: 1/5;
+  grid-row: 2/3;
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Alfa Slab One', cursive;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  word-spacing: 10px;
+
+  /* styling the position of the dropdown content */
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+  }
+
+}
+
+//this is my contact details info
+section{
+  grid-column: 1/4;
+  grid-row: 3/4;
+
+  p{
+    font-size: 25px;
+  }
+}
+
+.aside{
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.GoogleMap{
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+
+footer{
+  grid-column: 1/5;
+  grid-row: 5/6;
+  background-color: black;
+
+  p{
+    font-size: 18px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-style: italic;
+  }
+
+}
